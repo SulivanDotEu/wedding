@@ -3,9 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Meelo & Ben!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    <style>
+        .bg{
+            background-attachment: scroll;
+            background-color: initial;
+            background-size: cover;
+            background-origin: initial;
+            background-clip: initial;
+            background-position-x: 50%;
+            background-position-y: center;
+        }
+    </style>
 </head>
 <body>
 <section class="hero is-primary is-medium" >
@@ -15,7 +26,7 @@
             <div class="container">
                 <div class="nav-left">
                     <a class="nav-item">
-                        Ben & Meelo
+                        Meelo & Ben
                     </a>
                 </div>
                 <span class="nav-toggle">
@@ -34,12 +45,12 @@
                         Quizz
                     </a>
                     <span class="nav-item">
-            <a class="button is-primary is-inverted">
-              <span class="icon">
-                <i class="fa fa-user"></i>
-              </span>
-              <span>Your account</span>
-            </a>
+            {#<a class="button is-primary is-inverted">#}
+              {#<span class="icon">#}
+                {#<i class="fa fa-user"></i>#}
+              {#</span>#}
+              {#<span>Your account</span>#}
+            {#</a>#}
           </span>
                 </div>
             </div>
@@ -50,7 +61,7 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title">
-                Ben & Meelo
+                Meelo & Ben
             </h1>
             <h2 class="subtitle">
                 Mariage - 27/10/2017
@@ -59,20 +70,20 @@
     </div>
 
     <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
-        <nav class="tabs">
-            <div class="container">
-                <ul>
-                    <li class="is-active"><a>Overview</a></li>
-                    <li><a>Modifiers</a></li>
-                    <li><a>Grid</a></li>
-                    <li><a>Elements</a></li>
-                    <li><a>Components</a></li>
-                    <li><a>Layout</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    {#<div class="hero-foot">#}
+        {#<nav class="tabs">#}
+            {#<div class="container">#}
+                {#<ul>#}
+                    {#<li class="is-active"><a>Overview</a></li>#}
+                    {#<li><a>Modifiers</a></li>#}
+                    {#<li><a>Grid</a></li>#}
+                    {#<li><a>Elements</a></li>#}
+                    {#<li><a>Components</a></li>#}
+                    {#<li><a>Layout</a></li>#}
+                {#</ul>#}
+            {#</div>#}
+        {#</nav>#}
+    {#</div>#}
 </section>
 <br>
 <br>
@@ -83,22 +94,18 @@
             <div class="tile is-vertical is-8">
                 <div class="tile">
                     <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
+                        <article class="tile is-child notification is-primary bg"
+                                 style="background-image: url({{ asset("pics/20170610_161131.jpg") }}); height: 50px">
                         </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
+                        <article class="tile is-child notification is-warning bg"
+                                 style="background-image: url({{ asset("pics/20170610_161131.jpg") }})">
+
                         </article>
                     </div>
                     <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3">
-                                <img src="http://bulma.io/images/placeholders/640x480.png">
-                            </figure>
+                        <article class="tile is-child notification is-info bg"
+                                 style="background-image: url({{ asset("pics/20170628_210025.jpg") }})"
+                        >
                         </article>
                     </div>
                 </div>
@@ -128,7 +135,7 @@
 </section>
 <br>
 <br>
-<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+<div id="fh5co-event" class="fh5co-bg" style="">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
