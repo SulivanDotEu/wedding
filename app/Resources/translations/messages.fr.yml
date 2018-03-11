@@ -10,7 +10,7 @@ voc.timing: Timing
 from: 'à partir de 16:00'
 voc.address: Address
 voc.food: Nourriture
-'What you need :': 'Ce que vous avez besoin :'
+'What you need :': 'Ce dont avez besoin :'
 'Register yourself': 'Inscrivez vous'
 info.content.1: >
     Votre présence ce jour-là est ce qui compte le plus pour nous. Nous vivons ensemble depuis des années et nous ne manquons de rien.
@@ -20,9 +20,9 @@ info.content.2: >
 'on the list so we know you are coming :)': 'sur la liste afin de nous prévenir de votre venue.'
 'Warm clothes in case of bad weather': 'Des vêtements chauds en cas de mauvais temps.'
 'We need your help': 'Nous avons besoin de votre aide.'
-'We will ask our guests to bring something with them: a salad, an aperitif or a dessert.': 'Nous aimerions vous demander votre aide en amenant avec vous un petit quelque chose: une salade, un apéritif, un désert.'
 'Until midnight': 'Jusque minuit'
 'Let us know if you come!': 'Tenez nous au courant de votre venue!'
 'Register yourself on the list so we know you are coming :)': >
     Nous espérons avoir le plaisir de vous compter parmi nous et vous remercions par avance de bien vouloir confirmer votre participation.
 'Let us know!': 'Je serai présent !'
+food.from: "à partir de "
